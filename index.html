@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Countries Api</title>
+  </head>
+  <body>
+    <h1>Countries Api </h1>
+    <input type="text" id="pesquisar" placeholder=" Search Countries:" />
+
+    <div class="paises-container">
+      
+      <div class="country-list">
+        <div class="country-containerlist">
+          <h5>Continent:</h5>
+          <input
+            type="button"
+            value="Americas"
+            id="as"
+            class="btns"
+          />
+          <input type="button" value="Europe" id="eu" class="btns" />
+          <input type="button" value="Asia" id="asi" class="btns" />
+          <input type="button" value="Oceania" id="oc" class="btns" />
+          <input type="button" value="Africa" id="af" class="btns" />
+          <input type="button" value="Antartica" id="po" class="btns" />
+        </div>
+        <h5>Countries (<span id="countCountries"></span>)</h5>
+        <h6>Total population: <span id="totalPopulationList"></span></h6>
+        <table id="tabCountries"></table>
+      </div>
+
+      <!-- Países lado direito -->
+
+      <div class="paises-lista">
+        
+        <h5>Countries (<span id="favoritoscount"></span>)</h5>
+        <h6>Total Population: <span id="totalPopulationFavorites"></span></h6>
+        <table id="tabFavorites"></table>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
